@@ -5,7 +5,7 @@
 [![Readme Workflow](https://github.com/rolehippie/lsd/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/lsd/actions/workflows/readme.yml)
 [![Galaxy Workflow](https://github.com/rolehippie/lsd/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/lsd/actions/workflows/galaxy.yml)
 [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/lsd)](https://github.com/rolehippie/lsd/blob/master/LICENSE)
-[![Ansible Role](https://img.shields.io/ansible/role/61889)](https://galaxy.ansible.com/rolehippie/lsd)
+[![Ansible Role](https://img.shields.io/badge/role-rolehippie.lsd-blue)](https://galaxy.ansible.com/rolehippie/lsd)
 
 Ansible role to install lsd the ls replacement.
 
@@ -15,7 +15,6 @@ Building and improving this Ansible role have been sponsored by my current and p
 
 ## Table of content
 
-- [Requirements](#requirements)
 - [Default Variables](#default-variables)
   - [lsd_arch](#lsd_arch)
   - [lsd_download](#lsd_download)
@@ -26,11 +25,6 @@ Building and improving this Ansible role have been sponsored by my current and p
 - [Author](#author)
 
 ---
-
-## Requirements
-
-- Minimum Ansible version: `2.10`
-
 
 ## Default Variables
 
