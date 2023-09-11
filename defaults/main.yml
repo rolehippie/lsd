@@ -2,7 +2,7 @@
 ---
 # @var lsd_version:description: Version of the release to install
 # renovate: datasource=github-releases depName=lsd-rs/lsd
-lsd_version: 0.23.1
+lsd_version: 1.0.0
 
 # @var lsd_arch:description: Architecture of the package to install
 lsd_arch: "{{ ansible_architecture }}"
