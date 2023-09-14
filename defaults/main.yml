@@ -2,12 +2,12 @@
 ---
 # @var lsd_version:description: Version of the release to install
 # renovate: datasource=github-releases depName=lsd-rs/lsd
-lsd_version: 0.23.1
+lsd_version: 1.0.0
 
 # @var lsd_arch:description: Architecture of the package to install
-lsd_arch: "{{ ansible_architecture }}"
+lsd_arch: "{{ ansible_architecture }}-unknown-linux-musl"
 
 # @var lsd_download:description: URL to the archive of the release to install
-lsd_download: "https://github.com/lsd-rs/lsd/releases/download/{{ lsd_version }}/lsd-{{ lsd_version }}-{{ lsd_arch }}-unknown-linux-musl.tar.gz"
+lsd_download: "https://github.com/lsd-rs/lsd/releases/download/v{{ lsd_version }}/lsd-v{{ lsd_version }}-{{ lsd_arch }}.tar.gz"
 
 ...

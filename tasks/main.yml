@@ -32,7 +32,7 @@
     - lsd_version_changed
     - not ansible_check_mode
   copy:
-    src: "/usr/local/src/lsd-{{ lsd_version }}-{{ lsd_arch }}-unknown-linux-musl/lsd"
+    src: "/usr/local/src/lsd-v{{ lsd_version }}-{{ lsd_arch }}/lsd"
     dest: /usr/bin/lsd
     remote_src: True
     owner: root
@@ -43,7 +43,7 @@
 
 - name: Remove install directory
   file:
-    path: "/usr/local/src/lsd-{{ lsd_version }}-{{ lsd_arch }}-unknown-linux-musl"
+    path: "/usr/local/src/lsd-v{{ lsd_version }}-{{ lsd_arch }}"
     state: absent
   tags:
     - lsd
