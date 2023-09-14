@@ -40,7 +40,7 @@ Architecture of the package to install
 #### Default value
 
 ```YAML
-lsd_arch: '{{ ansible_architecture }}'
+lsd_arch: '{{ ansible_architecture }}-unknown-linux-musl'
 ```
 
 ### lsd_download
@@ -50,8 +50,8 @@ URL to the archive of the release to install
 #### Default value
 
 ```YAML
-lsd_download: https://github.com/lsd-rs/lsd/releases/download/{{ lsd_version }}/lsd-{{
-  lsd_version }}-{{ lsd_arch }}-unknown-linux-musl.tar.gz
+lsd_download: https://github.com/lsd-rs/lsd/releases/download/v{{ lsd_version }}/lsd-v{{
+  lsd_version }}-{{ lsd_arch }}.tar.gz
 ```
 
 ### lsd_version
@@ -61,7 +61,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-lsd_version: 0.23.1
+lsd_version: 1.0.0
 ```
 
 ## Discovered Tags
