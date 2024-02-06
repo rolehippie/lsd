@@ -1,16 +1,15 @@
-# Standards: 1.2
 ---
 - name: Check existing install
   register: lsd_version_check
   failed_when: False
   changed_when: False
   check_mode: False
-  shell: /usr/bin/lsd --version 2>&1
+  ansible.builtin.shell: /usr/bin/lsd --version 2>&1
   tags:
     - lsd
 
 - name: Fact version change
-  set_fact:
+  ansible.builtin.set_fact:
     lsd_version_changed: "{{ lsd_version_check.rc != 0 or (lsd_version_check.stdout_lines is defined and lsd_version not in lsd_version_check.stdout_lines[0]) | bool }}"
   tags:
     - lsd
@@ -18,7 +17,7 @@
 - name: Download release binary
   when:
     - lsd_version_changed
-  unarchive:
+  ansible.builtin.unarchive:
     src: "{{ lsd_download }}"
     dest: /usr/local/src
     remote_src: True
@@ -31,7 +30,7 @@
   when:
     - lsd_version_changed
     - not ansible_check_mode
-  copy:
+  ansible.builtin.copy:
     src: "/usr/local/src/lsd-v{{ lsd_version }}-{{ lsd_arch }}/lsd"
     dest: /usr/bin/lsd
     remote_src: True
@@ -42,7 +41,7 @@
     - lsd
 
 - name: Remove install directory
-  file:
+  ansible.builtin.file:
     path: "/usr/local/src/lsd-v{{ lsd_version }}-{{ lsd_arch }}"
     state: absent
   tags:
