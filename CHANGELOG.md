@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.0.0](https://github.com/rolehippie/lsd/compare/v2.0.0...v3.0.0) (2024-02-12)
+
+
+### Features
+
+* drop support for ubuntu 18.04 ([5e64304](https://github.com/rolehippie/lsd/commit/5e64304da2a385f118301994df4c171e6e131af6))
+* used full qualified collection names ([add37df](https://github.com/rolehippie/lsd/commit/add37dfc264437f473b1c4440cab8c93f7b8cf8a))
+
 ## [2.0.0](https://github.com/rolehippie/lsd/compare/v1.0.0...v2.0.0) (2023-09-18)
 
 
