@@ -61,7 +61,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-lsd_version: 1.1.1
+lsd_version: 1.1.2
 ```
 
 ## Discovered Tags
