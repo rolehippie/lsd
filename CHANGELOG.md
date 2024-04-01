@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.1](https://github.com/rolehippie/lsd/compare/v3.1.0...v3.1.1) (2024-04-01)
+
+
+### Bugfixes
+
+* **deps:** update dependency lsd-rs/lsd to v1.1.2 ([9e609a9](https://github.com/rolehippie/lsd/commit/9e609a9306b2dfcc1e8b98bc6aeb3d7e20e8361c))
+
 ## [3.1.0](https://github.com/rolehippie/lsd/compare/v3.0.0...v3.1.0) (2024-03-25)
 
 
