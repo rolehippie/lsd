@@ -1,9 +1,9 @@
 ---
 - name: Check existing install
   register: lsd_version_check
-  failed_when: False
-  changed_when: False
-  check_mode: False
+  failed_when: false
+  changed_when: false
+  check_mode: false
   ansible.builtin.shell: /usr/bin/lsd --version 2>&1
   tags:
     - lsd
@@ -20,7 +20,7 @@
   ansible.builtin.unarchive:
     src: "{{ lsd_download }}"
     dest: /usr/local/src
-    remote_src: True
+    remote_src: true
     owner: root
     group: root
   tags:
@@ -33,7 +33,7 @@
   ansible.builtin.copy:
     src: "/usr/local/src/lsd-v{{ lsd_version }}-{{ lsd_arch }}/lsd"
     dest: /usr/bin/lsd
-    remote_src: True
+    remote_src: true
     owner: root
     group: root
     mode: u=rwx,g=rx,o=rx

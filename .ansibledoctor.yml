@@ -1,4 +1,5 @@
 ---
-role_name: lsd
+role:
+  name: lsd
 
 ...
