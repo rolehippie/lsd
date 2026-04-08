@@ -50,8 +50,7 @@ URL to the archive of the release to install
 #### Default value
 
 ```YAML
-lsd_download: https://github.com/lsd-rs/lsd/releases/download/v{{ lsd_version 
-  }}/lsd-v{{ lsd_version }}-{{ lsd_arch }}.tar.gz
+lsd_download: https://github.com/lsd-rs/lsd/releases/download/v{{ lsd_version }}/lsd-v{{ lsd_version }}-{{ lsd_arch }}.tar.gz
 ```
 
 ### lsd_version
