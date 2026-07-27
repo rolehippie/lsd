@@ -1,5 +1,7 @@
 # Changelog
 
+## [3.4.0](https://github.com/rolehippie/lsd/compare/v3.3.0...v3.4.0) (2026-07-27)
+
 ## [3.3.0](https://github.com/rolehippie/lsd/compare/v3.2.0...v3.3.0) (2025-10-14)
 
 
