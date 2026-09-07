@@ -40,7 +40,7 @@ Architecture of the package to install
 #### Default value
 
 ```YAML
-lsd_arch: '{{ ansible_facts['architecture'] }}-unknown-linux-musl'
+lsd_arch: "{{ ansible_facts['architecture'] }}-unknown-linux-musl"
 ```
 
 ### lsd_download
